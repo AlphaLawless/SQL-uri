@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  postgres:
+    container_name: postgresql-uri
+    image: postgres:13
+    restart: always
+    volumes:
+      - ./postgres_volume_uri:/var/lib/postgresql/data
+      - ./init-user-db.sh:/docker-entrypoint-initdb.d/init.sh
+    environment:
+      POSTGRES_PASSWORD: docker-uri
+      POSTGRES_USER: docker-uri
+      POSTGRES_DB: docker-uri
+    expose:
+      - '5432'
+    ports:
+      - '5432:5432'
