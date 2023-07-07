@@ -29,3 +29,13 @@
 -- Chelsey D. Sanders	20
 -- Marty M. Harrison	5
 -- Average	12
+
+select lawyers.name, customers_number 
+from lawyers 
+where customers_number = (select max(customers_number) from lawyers)
+union all
+select lawyers.name, MIN(customers_number) 
+from lawyers 
+where customers_number = (select min(customers_number) from lawyers) group by name
+union all
+select 'Average', round(avg(customers_number)) from lawyers;

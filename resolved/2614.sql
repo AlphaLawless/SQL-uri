@@ -19,12 +19,12 @@
 
 -- customers
 -- id	name	street	city
-Giovanna Goncalves Oliveira	Rua Mato Grosso	Canoas
-Kauã Azevedo Ribeiro	Travessa Ibiá	Uberlândia
-Rebeca Barbosa Santos	Rua Observatório Meteorológico	Salvador
-Sarah Carvalho Correia	Rua Antônio Carlos da Silva	Apucarana
-João Almeida Lima	Rua Rio Taiuva	Ponta Grossa
-Diogo Melo Dias	Rua Duzentos e Cinqüenta	Várzea Grande  
+-- Giovanna Goncalves Oliveira	Rua Mato Grosso	Canoas
+-- Kauã Azevedo Ribeiro	Travessa Ibiá	Uberlândia
+-- Rebeca Barbosa Santos	Rua Observatório Meteorológico	Salvador
+-- Sarah Carvalho Correia	Rua Antônio Carlos da Silva	Apucarana
+-- João Almeida Lima	Rua Rio Taiuva	Ponta Grossa
+-- Diogo Melo Dias	Rua Duzentos e Cinqüenta	Várzea Grande  
 
 -- rentals
 -- id	rentals_date	id_customers
