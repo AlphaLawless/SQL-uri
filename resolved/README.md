@@ -220,7 +220,15 @@ WHERE id_customers IN(SELECT c.id FROM customers AS c);
 ### 2737
 
 ```sql
-
+SELECT lawyers.name, customers_number 
+FROM lawyers 
+WHERE customers_number = (SELECT MAX(customers_number) FROM lawyers)
+UNION ALL
+SELECT lawyers.name, MIN(customers_number) 
+FROM lawyers 
+WHERE customers_number = (SELECT MIN(customers_number) FROM lawyers) GROUP BY name
+UNION ALL
+SELECT 'Average', ROUND(AVG(customers_number)) FROM lawyers;
 ```
 
 ### 2738
